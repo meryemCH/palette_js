@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Yves roches</title>
+
+    <style>
+        body {
+    padding: 0;
+    margin:0;
+}
+.bg-green{
+  background-color: #6f7e0d;
+}
+
+body{
+	background-color: #DDD;
+}
+
+.small-img-group{
+    display:flex;
+    justify-content: space-between;
+    
+
+}
+.small-img-col{
+    flex-basis:24%;
+    cursor:pointer;
+
+}
+.h2{
+    font-size:small;
+}
+.h1{
+    font-size:3px;
+}
+
+h4, .h4 {
+    font-size: 1.5rem;
+  }
+
+h5, .h5 {
+  font-size: 1.25rem;
+}
+
+h6, .h6 {
+  font-size: 1rem;
+}
+.btn{
+    background: #ca43ca;
+    opacity:1;
+    transition:0,3s all;
+ 
+}
+
+    </style>
+  </head>
+  <body>
+
+ <!--navBar-->
+ <nav class="navbar navbar-light bg-green">
+    <div class="container-fluid py-2">
+        <div class="column main-header_logo_dsk">
+            <a href="/">
+            <picture class="picture"><source media="(min-width: 78rem)"
+                 srcset="logo.png">
+                 <source media="(min-width: 30rem) and (max-width: 78rem)" 
+                 srcset="logo.png"><img alt="Yves Rocher" class="picture_image" 
+            srcset="logo.png" style="max-height: px">
+             </picture>
+             </a>
+        </div>
+      <ul class="nav nav-pills">
+        <li class="nav-item"><a href="#" class="nav-link text-white" aria-current="page">Home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link text-white">Features</a></li>
+        <li class="nav-item"><a href="#" class="nav-link text-white">Pricing</a></li>
+        <li class="nav-item"><a href="#" class="nav-link text-white">FAQs</a></li>
+        <li class="nav-item"><a href="#" class="nav-link text-white">About</a></li>
+      </ul>
+
+    </div>
+  </nav>
+
+  <!---product img-->
+
+  <section class="container sproduct my-1 pt-2">
+      <div class="row mt-5"> 
+          <div class="col-lg-5 col-md-12 col-12-offset">
+            <h6>Home/Maquillage/Yeux/Mascara</h6>
+              <img class="img-fluid w-100 pb-1 mt-3" src="masara.png" id="MainImg" alt="">
+
+                <div class="small-img-group">
+                    <div class="small-img-col">
+                        <img src="mascara3.png" width="100%" class="small-img" alt="">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="mascara6.png" width="100%" class="small-img" alt="">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="masara.png" width="100%" class="small-img" alt="">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="mascara7.png" width="100%" class="small-img" alt="">
+                    </div>
+                </div>
+            </div>
+<!--about product-->
+          <div class="col-lg-6 col-md-12 col-12-fixed">
+              <h3 class="mt-5">Mascara Intense Metamorphose Waterproof - Noir</h3>
+              <h2 class="mt-5">Lorem ipsum dolor sit.</h2>
+              <h4 class="mt-3">Format : Flacon 7.8 ml</h4>
+              <button class="mt-3">Quantité</button>
+              <input class="mt-3" type="number" value="1">
+              <h1 class="mt-3">Réf : 46960</h1>
+              <h3 class="p-price">25£</h3>
+              <div class="d-grid gap-2">
+                <button class="btn mt-3" type="button">Ajouter au Panier</button>
+                <button class="buy-btn btn-light mt-3" type="button">Reserver en magasin</button>
+              </div>
+          </div>
+      </div>
+
+  </section>
+
+<!---product details-->
+<section class="container-fluid py-3">
+    <div class="row mt-3">
+        <div class="col">
+            <h1 class="text-center">description</h1>
+            <span>Intense Métamorphose Waterproof, comme sa version standard, ne fait aucun 
+                compromis, des cils visiblement plus volumineux, recourbés et allongés.
+                Grâce à sa brosse fibre en forme de sablier, intuitive,
+                 douce et facile d'utilisation, chaque cil est étoffé, gainé, allongé, 
+                 du coin interne ou coin externe de l’œil, aucun d’eux n’est oublié.
+                Sa formule est enrichie en Huile de Ricin nourrissante et en ea
+                u de Bleuet doux pour les yeux les plus sensibles et porteurs de lentilles.
+                Afin d’éviter que votre mascara ne s’assèche, veillez à 
+                bien le refermer après chaque utilisation, le capot ne doit plus pouvoir tourner.</span>
+
+        </div>
+    </div>
+    <!---more products-->
+    <section>
+        <div class="container-fluid py-5">
+            <h1>More products</h1>
+            <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Product image-->
+                        <img class="card-img-top" src="5.jpg" alt="" />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Special Item</h5>
+                                <!-- Product price-->
+                                <span class="text-muted"></span>
+                                $18.00
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Product image-->
+                        <img class="card-img-top" src="7.jpg" alt="" />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Popular Item</h5>
+                                <!-- Product price-->
+                                $40.00
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Product image-->
+                        <img class="card-img-top" src="8.jpg" alt="" />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Sale Item</h5>
+                                <!-- Product price-->
+                                <span class="text-muted"></span>
+                                $25.00
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Product image-->
+                        <img class="card-img-top" src="9.jpg" alt="" />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Fancy Product</h5>
+                                <!-- Product price-->
+                                $120.00 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+      
+    <!--footer-->
+</section>
+    <footer class=" container-fluid bg-green py-5">
+      <div class="row">
+        <div class="col-2">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Features</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Pricing</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">About</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-2">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Features</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Pricing</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">About</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-2">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Features</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Pricing</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">About</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-4 offset-1">
+          <form>
+            <h5>Subscribe to our newsletter</h5>
+            <p>Monthly digest of whats new and exciting from us.</p>
+            <div class="d-flex w-100 gap-2">
+              <label for="newsletter1" class="visually-hidden">Email address</label>
+              <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+              <button class="btn btn-light" type="button">Subscribe</button>
+            </div>
+          </form>
+        </div>
+        <div class="mt-5">
+        <p class="text-center text-white"><style>.heart{color:#e25555;}</style>
+            Made with <span class="heart">♥</span> ByMeryem</p>
+        </div>
+    
+      </div>
+    </footer>
+ 
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" 
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" 
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+  <script>
+      var MainImg = document.getElementById('MainImg');
+      var smallimg = document.getElementsByClassName('small-img');
+
+      smallimg[0].onclick=function(){
+          MainImg.src=smallimg[0].src;
+      }
+      smallimg[1].onclick=function(){
+          MainImg.src=smallimg[1].src;
+      }
+      smallimg[2].onclick=function(){
+          MainImg.src=smallimg[2].src;
+      }
+      smallimg[3].onclick=function(){
+          MainImg.src=smallimg[3].src;
+      }
+      smallimg[4].onclick=function(){
+          MainImg.src=smallimg[4].src;
+      }
+  </script>
+</body>
+</html>
